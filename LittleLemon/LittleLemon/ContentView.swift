@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var flag = false
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        Text("Tap Me")
+            .font(.largeTitle)
+            .foregroundColor(.white)
+            .padding(15)
+            .background(flag ? Color.green : Color.yellow)
+            .onTapGesture {
+                flag.toggle()
+            }
     }
 }
 

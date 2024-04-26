@@ -38,7 +38,7 @@ class TeaFactory : HotDrinkFactory
 {
     required init(){ }
     func prepare(amount: Int) -> any HotDrink {
-        print("Put the tea bag, boil water, pour \(amount)ml, addoyj lemon, en")
+        print("Put the tea bag, boil water, pour \(amount)ml, add lemon, enjoy!")
         return Tea()
     }
 }
